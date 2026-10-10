@@ -1,5 +1,10 @@
 # Changes
 
+## v1.0.1-studio-preview — 2026-10-10
+
+- Refresh the example checksum manifest after FFprobe regenerated its metadata for the bundled example path.
+- Verify all bundled example checksums in CI before the MP4 decode check; the video itself is unchanged.
+
 ## v1.0.0-studio-preview — 2026-10-10
 
 - Reusable Egyptian Arabic educational motion studio, pinned Remotion/React/TypeScript dependencies, local Cairo fonts, frame-based animation components, episode templates, validation and export helpers.
