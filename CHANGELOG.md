@@ -1,5 +1,13 @@
 # Changes
 
+## v1.1.0-studio-premium — 2026-10-10
+
+- Premium 2.5D studio kit (`src/kit`): clay materials with layered shadows, camera and parallax layers, perspective tilt, whole-word kinetic Arabic type, a caption pill, overlapping `TransitionSeries` cuts, and a sound layer.
+- Original generated sound design (`npm run sound:generate`): seven effects and a music bed from fixed-seed synthesis, no third-party material.
+- Episode 001 v6 (`Episode001Premium`, `npm run render:episode-001-premium`): the same script and caption timing, re-directed with the kit and sound design. Reviewed MP4, probe, contact sheet and checksums are in `examples/episode-001/`; review notes in `episodes/episode-001/PREMIUM_REVIEW.md`.
+- Added `@remotion/transitions` 4.0.534 (aligned with the other Remotion packages), three tests, and a CI check of the v6 example.
+- Narration is still pending; production stays draft. The v5 director cut and all earlier exports are unchanged.
+
 ## v1.0.1-studio-preview — 2026-10-10
 
 - Refresh the example checksum manifest after FFprobe regenerated its metadata for the bundled example path.

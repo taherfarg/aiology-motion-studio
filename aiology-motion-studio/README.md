@@ -8,6 +8,10 @@ Start Studio with `./studio.ps1 dev`, then open `Episode001DirectorCut`. The rev
 
 Use `./studio.ps1 render:episode-001-director` to reproduce the cut. Existing output is preserved; choose a new output filename for another render. `./studio.ps1 export:check output/episode-001/aiology-episode-001-director-v5.mp4 --silent-preview` checks this silent deliverable.
 
+## Episode 001 premium cut (v6)
+
+`Episode001Premium` is the same 52-second script and caption timing, re-directed with the premium kit and generated sound design. Export with `./studio.ps1 render:episode-001-premium` (writes `output/episode-001/aiology-episode-001-premium-v6.mp4`; choose a new filename to re-render). A reviewed copy is `examples/episode-001/aiology-episode-001-premium-v6.mp4`. Review: `episodes/episode-001/PREMIUM_REVIEW.md`. Regenerate the effects and music bed with `./studio.ps1 sound:generate`.
+
 ## Start
 
 Open PowerShell 7 in this directory:
@@ -44,6 +48,7 @@ For a fresh checkout, use Node >=22.20.0, npm ci (preserves the lockfile), and n
 
 ## Architecture
 
+- src/kit: premium layer (clay materials, camera and parallax, kinetic type, caption pill, transitions, sound). Import from `src/kit`. See studio/BRAND.md (materials) and studio/MOTION_RULES.md (kit).
 - src/components: Arabic typography, mixed terms, captions, cards, icons, arrows, geometry/progress.
 - src/animations: reusable frame-based entrances, stagger, transition, transform, camera grouping.
 - src/diagrams: SVG nodes/edges, networks, data flow, process and comparison layouts.

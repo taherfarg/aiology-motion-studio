@@ -1,6 +1,6 @@
 {
   "name": "aiology-motion-studio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AIOLOGY Arabic educational motion graphics studio",
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
     "@remotion/google-fonts": "4.0.534",
     "@remotion/media": "4.0.534",
     "@remotion/media-utils": "4.0.534",
+    "@remotion/transitions": "4.0.534",
     "lucide-react": "1.54.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -54,7 +55,9 @@
     "upgrade": "remotion upgrade",
     "audio:probe": "tsx scripts/probe-audio.ts",
     "export:check": "tsx scripts/check-export.ts",
-    "skills:verify": "node scripts/verify-skill-discovery.mjs"
+    "skills:verify": "node scripts/verify-skill-discovery.mjs",
+    "sound:generate": "tsx scripts/make-sound.ts",
+    "render:episode-001-premium": "remotion render src/index.ts Episode001Premium output/episode-001/aiology-episode-001-premium-v6.mp4 --codec=h264 --audio-codec=aac --crf=16 --pixel-format=yuv420p"
   },
   "engines": {
     "node": ">=22.20.0"

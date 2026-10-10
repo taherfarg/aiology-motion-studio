@@ -8,6 +8,7 @@ Record review evidence under episodes/<slug>/review: frame/time, observed proble
 - Arabic: joined glyphs, correct RTL punctuation/order, isolated English terms, no clipped descenders or overlapping words.
 - Readability: phone-size check; essential text >=40 px at 1080 width, captions normally 52 px, line breaks and display time comfortable.
 - Layout: consistent hierarchy, white background, house palette, safe margins, no diagram/caption collisions.
+- Premium finish: one clear hero per shot, depth and shadow consistent with BRAND.md materials, transitions that overlap without ghosting, sound cues landing on the visual event.
 - Motion: deterministic, controlled, each action explains something, sufficient holds, no accidental jumps at cuts.
 - Timing: speech onset and important actions aligned; no missing first/final words; captions cover spoken content.
 - Accessibility: meaning communicated through labels/shapes as well as color; strong text contrast; avoid flashing and unnecessary camera motion.

@@ -17,10 +17,19 @@ import { Intelligence } from "./episodes/episode001/redesign/Intelligence";
 import { Learning as DirectedLearning } from "./episodes/episode001/redesign/Learning";
 import { Conversation } from "./episodes/episode001/redesign/Conversation";
 import { Closing } from "./episodes/episode001/redesign/Closing";
+import { PremiumCut } from "./episodes/episode001/premium/PremiumCut";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="Episode001Premium"
+        component={PremiumCut}
+        durationInFrames={previewFrames}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="Episode001DirectorCut"
         component={DirectorCut}

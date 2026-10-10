@@ -21,3 +21,9 @@ Avoid dark canvases, neon, cyberpunk, glowing brains, generic robots, HUD overla
 Typography: self-hosted Cairo (SIL OFL, public/fonts/OFL-Cairo.txt), 400/600/700. Default title 72–80 px, body 44–52 px, captions 52 px at 1080 width. Essential text stays at least 40 px. Never shrink captions to force long sentences into the frame; split phrases. Use line height 1.5–1.6, whole-word animation, native Arabic shaping, dir=rtl, lang=ar. Isolate English terms with EnglishTerm/bdi; never reverse strings. Avoid tracking, letter splitting, and all-caps treatment of Arabic.
 
 Use src/themes/brand.ts and shared components as the implementation source. Actual rendered frames decide readability; Cairo loading alone does not prove correct shaping or mixed ordering.
+
+## Materials and depth (premium 2.5D)
+
+Hero objects are matte "clay" from `src/kit/surface.tsx`: a palette color with a faint top light, an edge highlight and three shadow layers (contact, mid, far tinted by the object's color). Washes (`tone.*Wash`) are tints of the brand colors for large calm surfaces. The canvas itself stays pure white; depth comes from shadow, scale and slight perspective tilt, never from dark backgrounds, glow, neon, textured backdrops or decorative gradients. The faint top light on clay is the only gradient allowed.
+
+One hero object per shot should fill roughly 55-65% of the usable width. Use the three kit layers (far, hero, near) for parallax, keep perspective tilt under about 14 degrees, and keep the brand bug to the opening and the closing mark.

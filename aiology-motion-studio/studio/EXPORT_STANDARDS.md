@@ -1,6 +1,6 @@
 # Export and performance standards
 
-Default social export: portrait 9:16, 1080×1920, 30 FPS, MP4, H.264, AAC, yuv420p, CRF 18 (adjust 16–23 when needed). Use local media and fonts; retain source license records. Render duration is ceil(voiceover duration × fps); at most one frame of audio-tail padding.
+Default social export: portrait 9:16, 1080×1920, 30 FPS, MP4, H.264, AAC, yuv420p, CRF 18 (adjust 16–23 when needed; the premium cut uses CRF 16). Use local media and fonts; retain source license records. Render duration is ceil(voiceover duration × fps); at most one frame of audio-tail padding.
 
 Use npm run episode:render -- <slug>; it validates the manifest, probes and decodes audio, prepares local public assets, renders to a unique timestamped output, decodes the MP4, and checks codecs/dimensions/fps. Existing exports are not overwritten. FFprobe JSON is saved beside the export.
 

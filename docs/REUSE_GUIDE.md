@@ -26,7 +26,7 @@ The render script writes a new copy into ignored `output/episode-001/`. It delib
 npx remotion render src/index.ts Episode001DirectorCut output/episode-001/aiology-episode-001-director-v6.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p
 ```
 
-The example is silent, including no music or sound effects. Its 20 Arabic caption cues preserve the supplied script, but their timestamps are provisional reading cues. The `episode.json` production manifest remains draft; do not simply lay a recording over the fixed 52-second edit. Align phrases to the actual recording and retime scenes/captions before the narrated release.
+The v5 example is silent, including no music or sound effects. The premium v6 example (`examples/episode-001/aiology-episode-001-premium-v6.mp4`) adds generated sound design and is checked with `npm run export:check -- <file>` without `--silent-preview`; regenerate its effects with `npm run sound:generate`. Its 20 Arabic caption cues preserve the supplied script, but their timestamps are provisional reading cues. The `episode.json` production manifest remains draft; do not simply lay a recording over the fixed 52-second edit. Align phrases to the actual recording and retime scenes/captions before the narrated release.
 
 The first GitHub release also carries the MP4 and an archive of the five director-cut review exports, decoded frames, contact sheets, and review notes. Source ZIP/tar archives are provided by GitHub. Generated dependencies, bundles, local audit outputs, and browser binaries are regenerated on the destination machine.
 

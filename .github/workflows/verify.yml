@@ -41,5 +41,7 @@ jobs:
         run: sha256sum --check SHA256SUMS.txt
       - name: Verify the checked-in silent MP4
         run: npm run export:check -- examples/episode-001/aiology-episode-001-director-v5.mp4 --silent-preview
+      - name: Verify the checked-in premium MP4 (with generated sound design)
+        run: npm run export:check -- examples/episode-001/aiology-episode-001-premium-v6.mp4
       - name: Bundle the Remotion project
         run: npm run build

@@ -4,7 +4,7 @@
 
 المشروع الكامل موجود في [`aiology-motion-studio/`](aiology-motion-studio/). الحلقة الأولى لها تجربة صامتة محسّنة مدتها **52 ثانية، 1080×1920، 30 FPS**. توقيتها مؤقت؛ النسخة المصحوبة بصوت تُضبط على تسجيل صاحب القناة.
 
-[تحميل الفيديو المحسّن](aiology-motion-studio/examples/episode-001/aiology-episode-001-director-v5.mp4) · [الإصدارات والملفات القابلة للتحميل](https://github.com/taherfarg/aiology-motion-studio/releases) · [دليل الاستخدام](docs/REUSE_GUIDE.md)
+[الفيديو الجديد (Premium v6 مع تصميم صوتي)](aiology-motion-studio/examples/episode-001/aiology-episode-001-premium-v6.mp4) · [الفيديو الصامت المحسّن](aiology-motion-studio/examples/episode-001/aiology-episode-001-director-v5.mp4) · [الإصدارات والملفات القابلة للتحميل](https://github.com/taherfarg/aiology-motion-studio/releases) · [دليل الاستخدام](docs/REUSE_GUIDE.md)
 
 ## التشغيل
 
