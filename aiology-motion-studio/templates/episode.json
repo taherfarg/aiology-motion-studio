@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "episode-slug",
+  "title": "عنوان الحلقة",
+  "language": "ar-EG",
+  "status": "draft",
+  "objectives": [],
+  "scriptFile": "script.ar.md",
+  "voiceover": null,
+  "scenes": [],
+  "captions": [],
+  "sfx": [],
+  "music": null,
+  "references": [],
+  "render": {"width":1080,"height":1920,"fps":30,"codec":"h264","audioCodec":"aac","crf":18}
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "episode-001",
+  "title": "يعني إيه ذكاء اصطناعي؟",
+  "language": "ar-EG",
+  "status": "draft",
+  "objectives": [
+    "فهم الذكاء الاصطناعي من أمثلة اللغة والتعرّف على الصور",
+    "التعرّف على فكرة تدريب النموذج على أمثلة لاكتشاف الأنماط",
+    "تمييز الإجابة الذكية عن افتراض التفكير البشري"
+  ],
+  "scriptFile": "script.ar.md",
+  "voiceover": null,
+  "scenes": [],
+  "captions": [],
+  "sfx": [],
+  "music": null,
+  "references": [
+    {
+      "label": "Creator visual storyboard",
+      "source": "assets/images/creator-storyboard-reference.png"
+    },
+    {
+      "label": "NIST AI definition",
+      "source": "https://csrc.nist.gov/glossary/term/artificial_intelligence"
+    },
+    {
+      "label": "Google ML introduction",
+      "source": "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml"
+    },
+    {
+      "label": "ChatGPT reliability",
+      "source": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth"
+    }
+  ],
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "codec": "h264",
+    "audioCodec": "aac",
+    "crf": 18
+  }
+}

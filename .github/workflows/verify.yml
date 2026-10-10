@@ -1,0 +1,42 @@
+name: Verify studio
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: studio-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: aiology-motion-studio
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+          cache: npm
+          cache-dependency-path: aiology-motion-studio/package-lock.json
+      - name: Install FFmpeg for the actual media decode tests
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install locked project dependencies
+        run: npm ci
+      - name: TypeScript, lint and tests
+        run: npm run check
+      - name: Validate draft episode assets
+        run: npm run episode:validate -- episode-001 --draft
+      - name: Verify the checked-in silent MP4
+        run: npm run export:check -- examples/episode-001/aiology-episode-001-director-v5.mp4 --silent-preview
+      - name: Bundle the Remotion project
+        run: npm run build

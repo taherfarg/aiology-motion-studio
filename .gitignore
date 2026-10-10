@@ -1,0 +1,21 @@
+# Dependencies, renders, generated bundles and machine-specific files
+**/node_modules/
+**/output/
+**/build/
+**/dist/
+**/.codegraph/
+**/.codex/
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+
+# Keep credentials and private local configuration out of the repository
+**/.env
+**/.env.*
+!**/.env.example
+**/*.pem
+**/*.key
+**/credentials.json
+
+# Reviewed examples are explicitly copied to the examples directory.
+# Canonical .agents/skills content is intentionally tracked.

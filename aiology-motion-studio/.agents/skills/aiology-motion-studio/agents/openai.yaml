@@ -1,0 +1,6 @@
+interface:
+  display_name: "AIOLOGY Motion Studio"
+  short_description: "Arabic educational videos from recorded voiceovers"
+  default_prompt: "Use $aiology-motion-studio to create an AIOLOGY explainer from my script and recorded voiceover."
+policy:
+  allow_implicit_invocation: true
