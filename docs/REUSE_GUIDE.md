@@ -1,5 +1,7 @@
 # Reusing AIOLOGY on a new machine
 
+Arabic step-by-step version (Windows, every step verified on a fresh clone): [SETUP_NEW_PC.ar.md](SETUP_NEW_PC.ar.md).
+
 The repository root contains documentation and CI. The runnable Remotion project is the child directory `aiology-motion-studio/`. Run npm commands from that directory, and open that directory as the Codex project.
 
 ## Install and preview

@@ -5,6 +5,7 @@
 *.mjs text eol=lf
 *.json text eol=lf
 *.yml text eol=lf
+SHA256SUMS.txt text eol=lf
 *.ps1 text eol=lf
 *.srt text eol=lf
 *.png binary
